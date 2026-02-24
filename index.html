@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .roll {
+        left: 50%;
+        bottom: 32px;
+      }
+
+      .remove {
+        left: 45%;
+        bottom: 128px;
+      }
+
+      .add {
+        left: 55%;
+        bottom: 128px;
+      }
+
+      button {
+        position: fixed;
+        transform: translateX(-50%);
+        border-radius: 8px;
+        border: none;
+        background: #fff;
+        color: #111;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        padding: 12px 36px;
+      }
+
+      button:hover {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="./src/main.ts"></script>
+    <button class="add">+</button>
+    <button class="remove">-</button>
+    <button class="roll">Roll</button>
+  </body>
+</html>
