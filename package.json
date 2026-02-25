@@ -1,6 +1,9 @@
 {
   "name": "dice",
   "private": true,
+  "scripts": {
+    "build": "bun build src/main.ts --outdir dist && cp index.html dist/index.html && sed -i 's|./src/main.ts|./main.js|' dist/index.html"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
