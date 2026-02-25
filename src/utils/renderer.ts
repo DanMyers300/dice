@@ -20,11 +20,6 @@ export const setupRenderer = (cubes: Cube[]) => {
     for (let cube of cubes) {
       if (cube.userData.targetQuaternion) {
         cube.quaternion.slerp(cube.userData.targetQuaternion, 0.1);
-
-        // Resume animation
-        //if (cube.quaternion.angleTo(cube.userData.targetQuaternion) < 0.00000001) {
-        //  cube.userData.targetQuaternion = null;
-        //}
       } else if (cube !== draggedCube) {
         cube.quaternion.premultiply(rotX).premultiply(rotY);
       };
