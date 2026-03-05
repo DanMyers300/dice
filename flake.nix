@@ -39,6 +39,8 @@
         cargo
         clippy
         rustc
+        wasm-pack
+        lld_19
       ];
     };
   };

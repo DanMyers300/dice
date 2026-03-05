@@ -1,5 +1,6 @@
 out/
 .env
+pkg/
 
 
 /target

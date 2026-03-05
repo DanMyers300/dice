@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    dice::run_web().unwrap();
 }
