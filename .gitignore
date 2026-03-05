@@ -2,6 +2,6 @@ out/
 .env
 
 
-# Added by cargo
-
 /target
+
+result

@@ -18,7 +18,7 @@
         "--release"
       ];
 
-      cargoHash = "";
+      cargoHash = "sha256-kk16h4YbYGeBEBoUVFoagMyVQFXmDuh3h+zaf4vPWn4=";
 
       installPhase = ''
         cargo build --target-dir out/
